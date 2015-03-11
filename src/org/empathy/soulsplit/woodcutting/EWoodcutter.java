@@ -21,7 +21,7 @@ import org.soulsplit.api.events.MessageEvent;
 import org.soulsplit.api.events.listeners.MessageListener;
 import org.soulsplit.api.methods.Skill;
 
-@ScriptManifest(author = "Empathy", category = Category.WOODCUTTING, description = "A SoulSplit AIO Woodcutter", name = "eWoodcutter", servers = { "Soulsplit" }, version = 1.0)
+@ScriptManifest(author = "Empathy", category = Category.WOODCUTTING, description = "A SoulSplit AIO Woodcutter", name = "EWoodcutter", servers = { "Soulsplit" }, version = 1.0)
 public class EWoodcutter extends Script implements Paintable, MessageListener {
 
 	public static String status = "";

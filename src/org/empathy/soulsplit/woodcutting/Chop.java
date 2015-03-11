@@ -22,7 +22,7 @@ public class Chop implements Strategy {
 	@Override
 	public boolean activate() {
 		SceneObject[] tree = SceneObjects.getNearest(EWoodcutter.treeData.getTreeId());
-		return tree.length > 0 && tree[0] != null && Players.getMyPlayer().getAnimation() == -1 &&  !Inventory.isFull() && Walking.startChop;
+		return tree.length > 0 && tree[0] != null && Players.getMyPlayer().getAnimation() == -1 &&  !EWoodcutter.brokeHatchet && !Inventory.isFull() && Walking.startChop;
 
 	}
 
@@ -62,18 +62,13 @@ public class Chop implements Strategy {
 					treeTime.restart();
 				}
 				
-				if (Players.getMyPlayer().getAnimation() == 836 || !Game.isLoggedIn() || EWoodcutter.brokeHatchet == true) {
+				if (Players.getMyPlayer().getAnimation() == 836 || !Game.isLoggedIn() || EWoodcutter.brokeHatchet) {
 					break;
 				}
 			}
-			
-			Time.sleep(new SleepCondition() {
-
-				@Override
-				public boolean isValid() {
-					return treeTime.getElapsedTime() > 1500;
-				}
-			}, 30000);
+			if (EWoodcutter.brokeHatchet) {
+				System.out.println("Hatchet broke :(");
+			}
 		}
 	}
 

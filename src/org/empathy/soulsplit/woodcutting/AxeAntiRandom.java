@@ -32,6 +32,7 @@ public class AxeAntiRandom implements Strategy {
 		final GroundItem[] toPickup = GroundItems.getNearest(Constants.AXE_HEADS);
 
 		if (toPickup.length > 0 && !Inventory.isFull() && toPickup[0] != null) {
+			System.out.println("Picking up axe head");
 			Menu.sendAction(234, toPickup[0].getId(), toPickup[0].getX(), toPickup[0].getY());
 			Time.sleep(new SleepCondition() {
 				@Override
