@@ -1,4 +1,4 @@
-package org.empathy.soulsplit.utils;
+package org.empathy.soulsplit.woodcutting;
 
 import org.parabot.environment.api.utils.Timer;
 import org.soulsplit.api.methods.Inventory;

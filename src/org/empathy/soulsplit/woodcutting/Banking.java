@@ -1,6 +1,5 @@
 package org.empathy.soulsplit.woodcutting;
 
-import org.empathy.soulsplit.utils.Utils;
 import org.parabot.environment.api.utils.Time;
 import org.parabot.environment.input.Keyboard;
 import org.parabot.environment.scripts.framework.SleepCondition;

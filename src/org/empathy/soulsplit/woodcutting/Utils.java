@@ -1,8 +1,7 @@
-package org.empathy.soulsplit.utils;
+package org.empathy.soulsplit.woodcutting;
 
 import java.util.ArrayList;
 
-import org.empathy.soulsplit.woodcutting.Constants;
 import org.parabot.environment.api.utils.Time;
 import org.parabot.environment.scripts.framework.SleepCondition;
 import org.soulsplit.api.methods.Bank;
