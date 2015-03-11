@@ -1,4 +1,4 @@
-package org.empathy.soulsplit.woodcutting;
+package org.empathy.soulsplit.utils;
 
 import java.util.ArrayList;
 
@@ -78,7 +78,7 @@ public class Utils {
 
 	public static void bankDesk() {
 
-		SceneObject[] desk = SceneObjects.getNearest(Constants.BANK);
+		SceneObject[] desk = SceneObjects.getNearest(28089);
 
 		try {
 			if (desk[0] != null && desk.length > 0 && !Bank.isOpen()) {

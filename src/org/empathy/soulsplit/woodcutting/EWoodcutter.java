@@ -11,6 +11,7 @@ import java.util.Arrays;
 
 import javax.imageio.ImageIO;
 
+import org.empathy.soulsplit.utils.ScriptTimer;
 import org.parabot.core.Context;
 import org.parabot.environment.api.interfaces.Paintable;
 import org.parabot.environment.scripts.Category;
